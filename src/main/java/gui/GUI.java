@@ -8,6 +8,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 
+
 public class GUI {
 
     private JFrame frame;
@@ -51,6 +52,78 @@ public class GUI {
             }
         });
         frame.add(getPicButton);
+
+        JButton factUsefulButton = new JButton("Useful");
+        factUsefulButton.setBounds(50, 270, 200, 30);
+        factUsefulButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //TODO: record a data input of one useful fact
+            }
+        });
+        frame.add(factUsefulButton);
+
+        JButton factUnusefulButton = new JButton("Unuseful");
+        factUnusefulButton.setBounds(300, 270, 200, 30);
+        factUnusefulButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //TODO: record a data input of one unuseful fact
+            }
+        });
+        frame.add(factUnusefulButton);
+
+        JButton fiveheart = new JButton("5❤");
+        fiveheart.setBounds(525, 50, 30, 30);
+        factUnusefulButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //TODO: record a data input of 5 star
+            }
+        });
+        frame.add(fiveheart);
+
+        JButton fourheart = new JButton("4❤");
+        fourheart.setBounds(525, 100, 30, 30);
+        factUnusefulButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //TODO: record a data input of 4 star
+            }
+        });
+        frame.add(fourheart);
+
+        JButton threeheart = new JButton("3❤");
+        threeheart.setBounds(525, 150, 30, 30);
+        factUnusefulButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //TODO: record a data input of 3 star
+            }
+        });
+        frame.add(threeheart);
+
+        JButton twoheart = new JButton("2❤");
+        twoheart.setBounds(525, 200, 30, 30);
+        factUnusefulButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //TODO: record a data input of 2 star
+            }
+        });
+        frame.add(twoheart);
+
+        JButton oneheart = new JButton("1❤");
+        oneheart.setBounds(525, 250, 30, 30);
+        factUnusefulButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //TODO: record a data input of 1 star
+            }
+        });
+        frame.add(oneheart);
+
+
 
         factArea = new JTextArea();
         factArea.setWrapStyleWord(true);
