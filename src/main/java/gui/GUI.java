@@ -65,7 +65,7 @@ public class GUI {
         double avg = factavgnum1.getAvgFact();
         JLabel factavgnum = new JLabel(String.valueOf(avg));
         factavgnum.setBounds(410, 270, 100, 30);
-        DecimalFormat df = new DecimalFormat("#.####");
+        DecimalFormat df = new DecimalFormat("#.###");
         String formatted = df.format(factavgnum1.getAvgFact());
         factavgnum.setText(String.valueOf(formatted));
         frame.add(factavgnum);
@@ -79,7 +79,7 @@ public class GUI {
         double avg2 = picavgnum1.getAvgPic();
         JLabel picavgnum = new JLabel(String.valueOf(avg2));
         picavgnum.setBounds(510, 270, 100, 30);
-        DecimalFormat df2 = new DecimalFormat("#.####");
+        DecimalFormat df2 = new DecimalFormat("#.###");
         String formatted2 = df2.format(picavgnum1.getAvgPic());
         picavgnum.setText(String.valueOf(formatted2));
         frame.add(picavgnum);
