@@ -64,6 +64,9 @@ public class GUI {
         double avg = factavgnum1.getAvgFact();
         JLabel factavgnum = new JLabel(String.valueOf(avg));
         factavgnum.setBounds(450, 270, 100, 30);
+        DecimalFormat df = new DecimalFormat("#.####");
+        String formatted = df.format(factavgnum1.getAvgFact());
+        factavgnum.setText(String.valueOf(formatted));
         frame.add(factavgnum);
 
 
