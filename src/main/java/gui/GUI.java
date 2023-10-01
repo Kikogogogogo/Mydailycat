@@ -29,7 +29,7 @@ public class GUI {
 
         frame = new JFrame("Today‘s cat");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(600, 400);
+        frame.setSize(600, 450);
         frame.setLayout(null);
 
         getFactButton = new JButton("Get Cat Fact");
@@ -57,38 +57,36 @@ public class GUI {
         });
         frame.add(getPicButton);
 
-        JLabel factavg = new JLabel("Fact avg: ");
-        factavg.setBounds(350, 270, 100, 30);
+        JLabel factavg = new JLabel("Fact average rating: ");
+        factavg.setBounds(70, 365, 150, 30);
         frame.add(factavg);
 
         AvgRating factavgnum1 = new AvgRating();
         double avg = factavgnum1.getAvgFact();
         JLabel factavgnum = new JLabel(String.valueOf(avg));
-        factavgnum.setBounds(410, 270, 100, 30);
+        factavgnum.setBounds(220, 365, 100, 30);
         DecimalFormat df = new DecimalFormat("#.###");
         String formatted = df.format(factavgnum1.getAvgFact());
         factavgnum.setText(String.valueOf(formatted));
         frame.add(factavgnum);
 
 
-        JLabel picavg = new JLabel("Pic avg: ");
-        picavg.setBounds(460, 270, 100, 30);
+        JLabel picavg = new JLabel("Picture average rating: ");
+        picavg.setBounds(350, 365, 150, 30);
         frame.add(picavg);
 
         AvgRating picavgnum1 = new AvgRating();
         double avg2 = picavgnum1.getAvgPic();
         JLabel picavgnum = new JLabel(String.valueOf(avg2));
-        picavgnum.setBounds(510, 270, 100, 30);
+        picavgnum.setBounds(510, 365, 100, 30);
         DecimalFormat df2 = new DecimalFormat("#.###");
         String formatted2 = df2.format(picavgnum1.getAvgPic());
         picavgnum.setText(String.valueOf(formatted2));
         frame.add(picavgnum);
 
 
-
-
         JButton factUsefulButton = new JButton("Useful");
-        factUsefulButton.setBounds(50, 270, 150, 30);
+        factUsefulButton.setBounds(50, 270, 200, 30);
         factUsefulButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -102,7 +100,7 @@ public class GUI {
         frame.add(factUsefulButton);
 
         JButton factUnusefulButton = new JButton("Unuseful");
-        factUnusefulButton.setBounds(200, 270, 150, 30);
+        factUnusefulButton.setBounds(300, 270, 200, 30);
         factUnusefulButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -116,7 +114,7 @@ public class GUI {
         frame.add(factUnusefulButton);
 
         JButton fiveheart = new JButton("5❤");
-        fiveheart.setBounds(525, 15, 30, 30);
+        fiveheart.setBounds(525, 40, 30, 30);
         fiveheart.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -130,7 +128,7 @@ public class GUI {
         frame.add(fiveheart);
 
         JButton fourheart = new JButton("4❤");
-        fourheart.setBounds(525, 65, 30, 30);
+        fourheart.setBounds(525, 90, 30, 30);
         fourheart.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -144,7 +142,7 @@ public class GUI {
         frame.add(fourheart);
 
         JButton threeheart = new JButton("3❤");
-        threeheart.setBounds(525, 115, 30, 30);
+        threeheart.setBounds(525, 140, 30, 30);
         threeheart.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -158,7 +156,7 @@ public class GUI {
         frame.add(threeheart);
 
         JButton twoheart = new JButton("2❤");
-        twoheart.setBounds(525, 165, 30, 30);
+        twoheart.setBounds(525, 190, 30, 30);
         twoheart.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -172,7 +170,7 @@ public class GUI {
         frame.add(twoheart);
 
         JButton oneheart = new JButton("1❤");
-        oneheart.setBounds(525, 215, 30, 30);
+        oneheart.setBounds(525, 240, 30, 30);
         oneheart.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
