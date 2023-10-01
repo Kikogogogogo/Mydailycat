@@ -21,8 +21,6 @@ where cat lover can discuss anything about cat!
 ~Cat facts API for facts: https://alexwohlbruck.github.io/cat-facts/docs/
 
 **4.Screenshots about using API**
+See the two png files.
 
-
-![bd75e6b6393e6d0693c3118e50732b3.png](..%2F..%2FDocuments%2FWeChat%20Files%2Fwxid_uruwsrg5t5cf12%2FFileStorage%2FTemp%2Fbd75e6b6393e6d0693c3118e50732b3.png)
-![863b3be6445e6288e6c12eeb930816a.png](..%2F..%2FDocuments%2FWeChat%20Files%2Fwxid_uruwsrg5t5cf12%2FFileStorage%2FTemp%2F863b3be6445e6288e6c12eeb930816a.png)
 **5.list of technical problems**
