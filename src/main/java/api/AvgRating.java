@@ -11,11 +11,11 @@ public class AvgRating {
     }
 
     //Avg rating for pictures implement
-    public Integer getAvgPic() {
+    public double getAvgPic() {
         Integer[] pictureRatings = dataAccess.getPictureRating();
         if(pictureRatings == null || pictureRatings.length == 0)
-            return null;
-        int sum = 0;
+            return 0.0;
+        double sum = 0.0;
         for(int rating : pictureRatings) {
             sum += rating;
         }
@@ -23,11 +23,11 @@ public class AvgRating {
     }
 
     //Avg rating for facts implement
-    public Integer getAvgFact() {
+    public double getAvgFact() {
         Integer[] factRatings = dataAccess.getFactRating();
         if(factRatings == null || factRatings.length == 0)
-            return null;
-        int sum = 0;
+            return 0.0;
+        double sum = 0.0;
         for(int rating : factRatings) {
             sum += rating;
         }

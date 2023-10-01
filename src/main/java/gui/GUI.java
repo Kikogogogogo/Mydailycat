@@ -1,5 +1,6 @@
 package gui;
 
+import api.AvgRating;
 import api.NewCat;
 import api.NewCat2;
 import javax.swing.*;
@@ -7,6 +8,8 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
+import java.text.DecimalFormat;
+
 import api.Data;
 
 
@@ -54,11 +57,24 @@ public class GUI {
         });
         frame.add(getPicButton);
 
+        JLabel factavg = new JLabel("Fact avg: ");
+        factavg.setBounds(380, 270, 100, 30);
+        frame.add(factavg);
+        AvgRating factavgnum1 = new AvgRating();
+        double avg = factavgnum1.getAvgFact();
+        JLabel factavgnum = new JLabel(String.valueOf(avg));
+        factavgnum.setBounds(450, 270, 100, 30);
+        frame.add(factavgnum);
+
+
         JButton factUsefulButton = new JButton("Useful");
-        factUsefulButton.setBounds(50, 270, 200, 30);
+        factUsefulButton.setBounds(50, 270, 150, 30);
         factUsefulButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                DecimalFormat df = new DecimalFormat("#.####");
+                String formatted = df.format(factavgnum1.getAvgFact());
+                factavgnum.setText(String.valueOf(formatted));
                 Data d = new Data();
                 d.setFactRating(1);
             }
@@ -66,10 +82,13 @@ public class GUI {
         frame.add(factUsefulButton);
 
         JButton factUnusefulButton = new JButton("Unuseful");
-        factUnusefulButton.setBounds(300, 270, 200, 30);
+        factUnusefulButton.setBounds(200, 270, 150, 30);
         factUnusefulButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                DecimalFormat df = new DecimalFormat("#.####");
+                String formatted = df.format(factavgnum1.getAvgFact());
+                factavgnum.setText(String.valueOf(formatted));
                 Data d = new Data();
                 d.setFactRating(0);
             }
