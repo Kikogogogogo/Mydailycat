@@ -78,7 +78,7 @@ public class GUI {
 
         JButton fiveheart = new JButton("5❤");
         fiveheart.setBounds(525, 50, 30, 30);
-        factUnusefulButton.addActionListener(new ActionListener() {
+        fiveheart.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Data d = new Data();
@@ -89,7 +89,7 @@ public class GUI {
 
         JButton fourheart = new JButton("4❤");
         fourheart.setBounds(525, 100, 30, 30);
-        factUnusefulButton.addActionListener(new ActionListener() {
+        fourheart.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Data d = new Data();
@@ -100,7 +100,7 @@ public class GUI {
 
         JButton threeheart = new JButton("3❤");
         threeheart.setBounds(525, 150, 30, 30);
-        factUnusefulButton.addActionListener(new ActionListener() {
+        threeheart.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Data d = new Data();
@@ -111,7 +111,7 @@ public class GUI {
 
         JButton twoheart = new JButton("2❤");
         twoheart.setBounds(525, 200, 30, 30);
-        factUnusefulButton.addActionListener(new ActionListener() {
+        twoheart.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Data d = new Data();
@@ -122,7 +122,7 @@ public class GUI {
 
         JButton oneheart = new JButton("1❤");
         oneheart.setBounds(525, 250, 30, 30);
-        factUnusefulButton.addActionListener(new ActionListener() {
+        oneheart.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Data d = new Data();
