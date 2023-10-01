@@ -72,11 +72,11 @@ public class GUI {
         factUsefulButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                Data d = new Data();
+                d.setFactRating(1);
                 DecimalFormat df = new DecimalFormat("#.####");
                 String formatted = df.format(factavgnum1.getAvgFact());
                 factavgnum.setText(String.valueOf(formatted));
-                Data d = new Data();
-                d.setFactRating(1);
             }
         });
         frame.add(factUsefulButton);
@@ -86,11 +86,11 @@ public class GUI {
         factUnusefulButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                Data d = new Data();
+                d.setFactRating(0);
                 DecimalFormat df = new DecimalFormat("#.####");
                 String formatted = df.format(factavgnum1.getAvgFact());
                 factavgnum.setText(String.valueOf(formatted));
-                Data d = new Data();
-                d.setFactRating(0);
             }
         });
         frame.add(factUnusefulButton);
