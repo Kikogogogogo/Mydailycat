@@ -23,4 +23,6 @@ where cat lover can discuss anything about cat!
 **4.Screenshots about using API**
 See the two png files.
 
+(Please try 20 amazon corretto sdk 20.0.2 if there is any problem about configure setting)
+
 
