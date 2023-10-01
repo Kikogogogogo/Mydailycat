@@ -1,7 +1,11 @@
 package api;
 
-public interface RatingAccess {
-    public void setRating(String[] data);
+public interface DataAccess {
+    public void setPictureRating(int rating);
 
-    public String[] getRating();
+    public Integer[] getPictureRating();
+
+    public void setFactRating(int rating);
+
+    public Integer[] getFactRating();
 }
