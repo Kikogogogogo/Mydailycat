@@ -7,6 +7,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
+import api.Data;
 
 
 public class GUI {
@@ -58,7 +59,8 @@ public class GUI {
         factUsefulButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //TODO: record a data input of one useful fact
+                Data d = new Data();
+                d.setFactRating(1);
             }
         });
         frame.add(factUsefulButton);
@@ -68,7 +70,8 @@ public class GUI {
         factUnusefulButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //TODO: record a data input of one unuseful fact
+                Data d = new Data();
+                d.setFactRating(0);
             }
         });
         frame.add(factUnusefulButton);
@@ -78,7 +81,8 @@ public class GUI {
         factUnusefulButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //TODO: record a data input of 5 star
+                Data d = new Data();
+                d.setPictureRating(5);
             }
         });
         frame.add(fiveheart);
@@ -88,7 +92,8 @@ public class GUI {
         factUnusefulButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //TODO: record a data input of 4 star
+                Data d = new Data();
+                d.setPictureRating(4);
             }
         });
         frame.add(fourheart);
@@ -98,7 +103,8 @@ public class GUI {
         factUnusefulButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //TODO: record a data input of 3 star
+                Data d = new Data();
+                d.setPictureRating(3);
             }
         });
         frame.add(threeheart);
@@ -108,7 +114,8 @@ public class GUI {
         factUnusefulButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //TODO: record a data input of 2 star
+                Data d = new Data();
+                d.setPictureRating(2);
             }
         });
         frame.add(twoheart);
@@ -118,7 +125,8 @@ public class GUI {
         factUnusefulButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //TODO: record a data input of 1 star
+                Data d = new Data();
+                d.setPictureRating(1);
             }
         });
         frame.add(oneheart);
